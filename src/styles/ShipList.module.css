@@ -1,0 +1,109 @@
+.ship_list {}
+
+.ship_list_title {
+    /* Profile-title */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+
+    /* identical to box height */
+
+    /* black */
+    color: #1E1E1E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.list_card {
+    /* list card */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px;
+    gap: 20px;
+
+    position: relative;
+    width: 325px;
+    height: 243px;
+
+    /* white */
+    background: white;
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.list_card_image {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: -0.14px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list_card_description {
+    display: flex;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 0 15px 0;
+    width: 100%;
+}
+
+.list_card_title {
+    /* List-title */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* black */
+    color: #1E1E1E;
+}
+
+.list_card_subtitle {
+    /* description */
+
+    /* List-subtitle */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    /* blue-3 */
+    color: #233869;
+
+    opacity: 0.5;
+}
+
+.button_circle {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #F7F8FB;
+    box-shadow: 0px 1px 0px #D3D7E1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    float: right;
+}
+
+.list_card_description_titles {
+    flex-grow: 1;
+}
+
+.list_card_description_link {
+    flex-grow: 1;
+}

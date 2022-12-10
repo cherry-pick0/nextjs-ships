@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 import Header from '../modules/common/Header';
 import Footer from '../modules/common/Footer';
 import ShipList from '../modules/list/ShipList';
