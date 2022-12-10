@@ -8,9 +8,8 @@ export default function ListItem(props: { ship: Ship }) {
 
     return (
         <div className={styles.list_card}>
-            <div style={{
-                backgroundImage: `url(${image})`
-            }} className={styles.list_card_image}></div>
+            <div style={{ backgroundImage: `url(${image})` }}
+                className={styles.list_card_image}></div>
             <div className={styles.list_card_description}>
                 <div className={styles.list_card_description_titles}>
                     <div className={styles.list_card_title}>{props.ship.name}</div>
