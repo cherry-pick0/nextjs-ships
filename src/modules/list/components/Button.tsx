@@ -8,9 +8,7 @@ export default function Button(props: { shipId: string }) {
     return (
         <Link href={`/ship/${props.shipId}`}>
             <div className={styles.button_circle}>
-
                 <i className={styles.arrow_right} style={{ backgroundImage: `url(${arrow_right_svg})` }}></i>
-
             </div>
         </Link>
     )

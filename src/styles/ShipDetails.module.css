@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Indie Flower');
+@import url('https://fonts.cdnfonts.com/css/gotham-rounded');
+
+.ship_list {}
+
+.ship_details_container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.ship_list_title {
+    /* Profile-title */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 55px;
+
+    /* identical to box height */
+
+    /* black */
+    color: #1E1E1E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.main_description {
+    /* list card */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 20px;
+    gap: 20px;
+
+    position: relative;
+    height: auto;
+
+    /* white */
+    background: white;
+    box-shadow: 0px 2px 0px #D3D7E1;
+    border-radius: 0px 0px 20px 20px;
+
+    margin-bottom: 20px;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+
+.main_description_image {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: -0.14px;
+    border-radius: 0;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_description_description {
+    display: flex;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 15px 0;
+    width: 100%;
+}
+
+.main_description_title {
+    /* List-title */
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 10px;
+    /* black */
+    color: #1E1E1E;
+}
+
+.main_description_subtitle {
+    /* description */
+
+    /* List-subtitle */
+    font-family: 'Gotham Rounded';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height */
+
+    /* blue-3 */
+    color: #233869;
+
+    opacity: 0.5;
+}
+
+.button_circle {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #F7F8FB;
+    box-shadow: 0px 1px 0px #D3D7E1;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+}
+
+.button_circle:hover {
+    background-color: #D3D7E1;
+}
+
+.arrow_left {
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    margin: 25% 25%;
+    display: block;
+}
+
+.main_description_description_titles {
+    flex-grow: 1;
+}
+
+.main_description_description_link {
+    position: absolute;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.back_container {
+    display: flex;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.back_container_text {
+    margin-left: 10px;
+    font-family: 'Indie Flower';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.basic_info_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mission_list_item_container {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.info_title_container {
+    display: flex;
+}
+
+.info_title {
+    font-family: 'Indie Flower';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.info_arrow {
+    margin-left: 10px;
+    width: 30px;
+    background-image: url('../../public/arrow_below.svg');
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.basic_info_card {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.basic_info_card_container {
+    background-image: url('../../public/basic_info_card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom center, 50%, 50%;
+    height: 106px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+    .basic_info_card_container {
+        background-image: url('../../public/basic_info_card.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 106px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+}
+
+.basic_info_card_title {
+    font-family: 'Indie Flower';
+    font-size: 18px;
+    font-weight: 300;
+    opacity: 50%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.basic_info_card_subtitle {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.mission_container {
+    margin-bottom:15px;
+}
+
+.mission_name {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.mission_flight {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+}

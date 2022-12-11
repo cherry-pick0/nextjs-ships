@@ -2,8 +2,9 @@ import styles from '../../styles/Home.module.css'
 import Header from '../../modules/common/Header';
 import Footer from '../../modules/common/Footer';
 import Loader from '../../modules/common/Loader';
-import { ShipItemDetails } from '../../data/Models';
+import { Ship } from '../../data/Models';
 import React, { useState, useEffect } from 'react';
+import ShipDetails from '../../modules/details/ShipDetails';
 
 
 export async function getServerSideProps(context: { params: { shipId: string } }) {
@@ -12,8 +13,8 @@ export async function getServerSideProps(context: { params: { shipId: string } }
     }
 }
 
-const ShipDetails = (props: { shipId: string }) => {
-    const [data, setData]: [(ShipItemDetails | any), any] = useState(null)
+const ShipPage = (props: { shipId: string }) => {
+    const [data, setData]: [(Ship | any), any] = useState(null)
     const [isLoading, setLoading] = useState(false)
 
     useEffect(() => {
@@ -30,13 +31,8 @@ const ShipDetails = (props: { shipId: string }) => {
 
     return <div className={styles.container}>
         <Header />
-        <main className={styles.main}>
-            <div>{data.__typename}</div>
-            <div>{data.home_port}</div>
-            <div>{data.type}</div>
-            <div>{data.weight_kg}</div>
-        </main>
+        <ShipDetails ship={data}/>
         <Footer />
     </div>;
 }
-export default ShipDetails;
+export default ShipPage;

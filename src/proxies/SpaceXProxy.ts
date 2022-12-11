@@ -48,6 +48,8 @@ export default class SpaceXProxy {
                 query: gql`
                 query shipQuery($id: ID!) {
                     ship(id: $id) {
+                      image
+                      name
                       type
                       weight_kg
                       year_built
