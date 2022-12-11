@@ -4,7 +4,7 @@ import Button from "./Button";
 const Description = (props: { image: string, title: string, subtitle: string }) => {
 
 
-    var image = props.image ? props.image : "placeholder-image.jpg";
+    var image = props.image ? props.image : "../placeholder-image.jpg";
 
     return (
         <div className={styles.main_description}>
