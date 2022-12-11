@@ -9,14 +9,12 @@ import Button from './components/Button';
 const ShipDetails = (props: { ship: Ship }) => {
     return (
         <div className={styles.ship_details_container}>
-            <main>
-                <Description image={props.ship.image} title={props.ship.name} subtitle={props.ship.type} />
-                <BasicInfo  year={props.ship.year_built}
-                            weight={props.ship.weight_kg}
-                            class={props.ship.class}
-                            port={props.ship.home_port} />
-                <MissionList missions={props.ship.missions}/>
-            </main>
+            <Description image={props.ship.image} title={props.ship.name} subtitle={props.ship.type} />
+            <BasicInfo year={props.ship.year_built}
+                weight={props.ship.weight_kg}
+                class={props.ship.class}
+                port={props.ship.home_port} />
+            <MissionList missions={props.ship.missions} />
 
             <div className={styles.back_container}>
                 <Button />

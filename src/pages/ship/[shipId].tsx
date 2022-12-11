@@ -29,10 +29,10 @@ const ShipPage = (props: { shipId: string }) => {
 
     if (isLoading || !data) return <Loader />
 
-    return <div className={styles.container}>
+    return <main className={styles.container}>
         <Header />
-        <ShipDetails ship={data}/>
+        <ShipDetails ship={data} />
         <Footer />
-    </div>;
+    </main>;
 }
 export default ShipPage;
