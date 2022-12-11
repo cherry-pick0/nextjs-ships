@@ -3,8 +3,6 @@ import { Ship } from '../data/Models';
 import { ApolloQueryResult, ApolloError } from '@apollo/client';
 
 
-
-
 export default class SpaceXProxy {
 
     client: ApolloClient<object>;
